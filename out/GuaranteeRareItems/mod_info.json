@@ -1,17 +1,24 @@
 {
-    "id": "guarantee-rare-items",
-    "name": "Guarantee Rare Items",
-    "author": "pipai",
-    "version": "0.1",
-    "description": "Guarantee Rare Items",
-    "gameVersion": "0.95.1a-RC6",
-    "dependencies": [
-        {
-            "id": "lw_lazylib",
-            "name": "LazyLib",
-            "version": "2.7b"
-        }
-    ],
-    "jars": ["jars/gri.jar"],
-    "modPlugin": "com.pipai.starsector.gri.GuaranteeRareItemsModPlugin"
+  "id": "guarantee-rare-items",
+  "name": "Guarantee Rare Items",
+  "author": "pipai",
+  "version": "0.1",
+  "description": "Guarantee Rare Items",
+  "gameVersion": "0.95.1a-RC6",
+  "dependencies": [
+    {
+      "id": "lw_lazylib",
+      "name": "LazyLib",
+      "version": "2.7b"
+    },
+    {
+      "id": "MagicLib",
+      "name": "MagicLib",
+      "version": "0.45.2"
+    }
+  ],
+  "jars": [
+    "jars/gri.jar"
+  ],
+  "modPlugin": "com.pipai.starsector.gri.GuaranteeRareItemsModPlugin"
 }

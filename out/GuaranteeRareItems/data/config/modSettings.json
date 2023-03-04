@@ -1,0 +1,31 @@
+{
+  "guarantee-rare-items": {
+    "rare_items": [
+      "synchrotron",
+      "pristine_nanoforge",
+      "corrupted_nanoforge",
+      "orbital_fusion_lamp",
+      "mantle_bore",
+      "catalytic_core",
+      "soil_nanites",
+      "biofactory_embryo",
+      "fullerene_spool",
+      "plasma_dynamo",
+      "cryoarithmetic_engine",
+      "drone_replicator",
+      "dealmaker_holosuite",
+      "coronal_portal",
+      "IndEvo_log_core",
+      "IndEvo_neurals",
+      "IndEvo_transmitter",
+      "IndEvo_simulator"
+    ],
+    "salvage_locations": [
+      "station_research_remnant",
+      "station_mining_remnant",
+      "orbital_habitat_remnant",
+      "IndEvo_arsenalStation",
+      "IndEvo_orbitalLaboratory"
+    ]
+  }
+}
