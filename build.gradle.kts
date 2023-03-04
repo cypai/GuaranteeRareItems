@@ -17,9 +17,6 @@ dependencies {
     implementation(fileTree(starsectorDir) {
         this.include("*.jar", "starfarer.api.zip")
     })
-    implementation(files("${modsDir}/LazyLib/jars/LazyLib.jar"))
-    implementation(files("${modsDir}/LazyLib/jars/LazyLib-Kotlin.jar"))
-    implementation(files("${modsDir}/MagicLib/jars/MagicLib.jar"))
 }
 
 tasks {

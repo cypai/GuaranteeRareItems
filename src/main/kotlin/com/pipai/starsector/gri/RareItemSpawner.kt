@@ -1,16 +1,11 @@
 package com.pipai.starsector.gri
 
 import com.fs.starfarer.api.Global
-import com.fs.starfarer.api.campaign.CargoAPI
-import com.fs.starfarer.api.campaign.CustomCampaignEntityAPI
-import com.fs.starfarer.api.campaign.SectorAPI
-import com.fs.starfarer.api.campaign.SectorEntityToken
-import com.fs.starfarer.api.campaign.SpecialItemData
+import com.fs.starfarer.api.campaign.*
 import com.fs.starfarer.api.impl.campaign.procgen.DropGroupRow
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.BaseSalvageSpecial
 import com.fs.starfarer.api.util.Misc
 import com.pipai.starsector.gri.utils.chooseAmount
-import data.scripts.util.MagicCampaign
 
 class RareItemSpawner(private val sector: SectorAPI) {
     val logger = Global.getLogger(this.javaClass)
@@ -18,14 +13,12 @@ class RareItemSpawner(private val sector: SectorAPI) {
 
     fun spawnRareItems() {
         val rareItemIds = allRareItemIds()
-        rareItemIds.forEach { logger.info("${it.specialItemId} ${it.specialItemData}") }
         val entities = sector.validRareItemEntities()
-        logger.info("Found ${entities.size} total valid entities.")
         entities.chooseAmount(rareItemIds.size, Misc.random)
             .zip(rareItemIds)
-            .forEach {  (salvageable, rareItem) ->
+            .forEach { (salvageable, rareItem) ->
                 addRareItem(salvageable, rareItem)
-                salvageable.addTag("gri_salvageable")
+//                salvageable.addTag("gri_salvageable")
             }
     }
 
