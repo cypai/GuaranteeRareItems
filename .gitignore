@@ -42,4 +42,5 @@ bin/
 .DS_Store
 
 .idea
-out/jars/
+out/GuaranteeRareItems/jars/
+out/*.7z

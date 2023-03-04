@@ -21,7 +21,7 @@ dependencies {
 
 tasks {
     named<Jar>("jar") {
-        destinationDirectory.set(file("$rootDir/out/jars"))
+        destinationDirectory.set(file("$rootDir/out/GuaranteeRareItems/jars"))
         archiveFileName.set("gri.jar")
     }
 }

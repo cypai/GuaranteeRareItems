@@ -8,7 +8,6 @@ import com.fs.starfarer.api.util.Misc
 import com.pipai.starsector.gri.utils.chooseAmount
 
 class RareItemSpawner(private val sector: SectorAPI) {
-    val logger = Global.getLogger(this.javaClass)
     val rare_item_entities = listOf("station_research_remnant", "station_mining_remnant", "orbital_habitat_remnant")
 
     fun spawnRareItems() {
