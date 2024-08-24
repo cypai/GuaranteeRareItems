@@ -2,7 +2,7 @@
   "id": "guarantee-rare-items",
   "name": "Guarantee Rare Items",
   "author": "pipai",
-  "version": { "major": '0', "minor": '3', "patch": '0' },
+  "version": { "major": '0', "minor": '3', "patch": '1' },
   "description": "Guarantee Rare Items",
   "gameVersion": "0.97a-RC11",
   "dependencies": [

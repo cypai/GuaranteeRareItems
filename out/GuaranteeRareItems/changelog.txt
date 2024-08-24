@@ -1,0 +1,12 @@
+0.3.1
+=====
+Added Version Checker Support
+
+0.3
+===
+Update for 0.97a
+
+0.2
+===
+Compatibility for Industrial Evolution
+JSON Configuration
