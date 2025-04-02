@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.5.0"
+    kotlin("jvm") version "2.1.20"
     java
 }
 
@@ -28,11 +28,3 @@ tasks {
         archiveFileName.set("gri.jar")
     }
 }
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.6"
-}
-
-// Compile Java to Java 7 bytecode so that Starsector can use it
-java.sourceCompatibility = JavaVersion.VERSION_1_7
-java.targetCompatibility = JavaVersion.VERSION_1_7

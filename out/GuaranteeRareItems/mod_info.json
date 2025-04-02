@@ -2,19 +2,17 @@
   "id": "guarantee-rare-items",
   "name": "Guarantee Rare Items",
   "author": "pipai",
-  "version": { "major": '0', "minor": '3', "patch": '1' },
+  "version": { "major": '0', "minor": '4', "patch": '0' },
   "description": "Guarantee Rare Items",
-  "gameVersion": "0.97a-RC11",
+  "gameVersion": "0.98a-RC5",
   "dependencies": [
     {
       "id": "lw_lazylib",
       "name": "LazyLib",
-      "version": "2.8b"
     },
     {
       "id": "MagicLib",
       "name": "MagicLib",
-      "version": "1.4.1"
     }
   ],
   "jars": [
