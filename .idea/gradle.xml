@@ -4,14 +4,14 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="WRAPPED" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="/usr/share/java/gradle" />
         <option name="modules">
           <set>
-            <option value="/hdd/cpai/Games-hdd/ss-mods/GuaranteeRareItems" />
+            <option value="$PROJECT_DIR$" />
           </set>
         </option>
+        <option name="myGradleHome" value="/usr/share/java/gradle" />
       </GradleProjectSettings>
     </option>
   </component>

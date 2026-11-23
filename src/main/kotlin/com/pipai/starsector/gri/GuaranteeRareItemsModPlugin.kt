@@ -7,5 +7,7 @@ class GuaranteeRareItemsModPlugin : BaseModPlugin() {
     override fun onNewGameAfterProcGen() {
         Global.getLogger(this.javaClass).info("Guaranteeing rare items...")
         RareItemSpawner(Global.getSector()).spawnRareItems()
+        Global.getLogger(this.javaClass).info("Guaranteeing derelict recoveries...")
+        DerelictGuarantor(Global.getSector()).guaranteeRecoveries()
     }
 }

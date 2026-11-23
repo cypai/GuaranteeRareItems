@@ -5,7 +5,7 @@ import com.fs.starfarer.api.campaign.*
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.BaseSalvageSpecial
 import com.fs.starfarer.api.util.Misc
 import com.pipai.starsector.gri.utils.chooseAmount
-import data.scripts.util.MagicSettings
+import org.magiclib.util.MagicSettings
 
 class RareItemSpawner(private val sector: SectorAPI) {
 
@@ -38,8 +38,7 @@ class RareItemSpawner(private val sector: SectorAPI) {
 
     private fun salvageLocations(sector: SectorAPI): List<CustomCampaignEntityAPI> {
         return sector.allLocations
-            .map { it.customEntities }
-            .flatten()
+            .flatMap { it.customEntities }
             .filter { it.customEntityType in salvageLocations }
     }
 }

@@ -4,11 +4,11 @@
   "author": "pipai",
   "version": {
     "major": "0",
-    "minor": "5",
+    "minor": "6",
     "patch": "0"
   },
   "description": "Guarantee Rare Items",
-  "gameVersion": "0.98.5a-RC5",
+  "gameVersion": "0.98.5a-RC9",
   "dependencies": [
     {
       "id": "lw_lazylib",

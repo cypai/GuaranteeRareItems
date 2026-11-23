@@ -9,7 +9,7 @@ repositories {
     mavenCentral()
 }
 
-val starsectorDir = "/home/cpai/Games/Games-hdd/starsector"
+val starsectorDir = "./starsector"
 val modsDir = "${starsectorDir}/mods"
 
 dependencies {

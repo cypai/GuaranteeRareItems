@@ -26,6 +26,9 @@
       "orbital_habitat_remnant",
       "IndEvo_arsenalStation",
       "IndEvo_orbitalLaboratory"
+    ],
+    "hull_variant_ids": [
+      "legion_xiv_Elite"
     ]
   }
 }
