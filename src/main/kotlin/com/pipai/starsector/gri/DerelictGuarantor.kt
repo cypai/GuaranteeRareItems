@@ -6,6 +6,7 @@ import com.fs.starfarer.api.campaign.SectorAPI
 import com.fs.starfarer.api.campaign.SectorEntityToken
 import com.fs.starfarer.api.impl.campaign.DerelictShipEntityPlugin
 import com.fs.starfarer.api.impl.campaign.procgen.themes.SalvageSpecialAssigner
+import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial
 import com.fs.starfarer.api.util.Misc
 import org.magiclib.util.MagicSettings
 
@@ -31,7 +32,9 @@ class DerelictGuarantor(private val sector: SectorAPI) {
 
     fun makeRecoverable(entity: SectorEntityToken) {
         val creator = SalvageSpecialAssigner.ShipRecoverySpecialCreator(null, 0, 0, false, null, null)
-        Misc.setSalvageSpecial(entity, creator.createSpecial(entity, null))
+        val specialData = creator.createSpecial(entity, null) as ShipRecoverySpecial.ShipRecoverySpecialData
+        specialData.storyPointRecovery = true
+        Misc.setSalvageSpecial(entity, specialData)
     }
 
     private fun derelictLocations(sector: SectorAPI, variant: String): List<CustomCampaignEntityAPI> {
